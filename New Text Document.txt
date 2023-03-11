@@ -1,0 +1,73 @@
+1) Which fragment-lifecycle callback draws the fragment's UI for the first time?
+A. onAttach()
+B. onActivityCreated()
+C. onCreate()
+D. onCreateView()
+
+2) Which fragment-lifecycle callback is called when a fragment becomes visible to the user?
+A. onResume()
+B. onStart()
+C. onCreateView()
+D. onAttach()
+
+3) Which method should you use to create a new instance of a fragment?
+A. newInstance()
+B. newFragment()
+C. createFragment()
+D. makeFragment()
+
+4) How can you pass data from an activity to a fragment?
+A. Using the Intent object
+B. Using the Bundle object
+C. Using a ViewModel
+D. Using a static method in the fragment class
+
+5) How can you communicate between two fragments hosted by the same activity?
+A. Using a callback interface
+B. Using the EventBus library
+C. Using the Navigation component
+D. Using the Intent object
+
+6) How can you add a fragment to an activity using XML?
+A. Using the <fragment> tag
+B. Using the <include> tag
+C. Using the <frame_layout> tag
+D. Using the <view> tag
+
+7) Which method is used to add a fragment to an activity dynamically?
+A. add()
+B. attach()
+C. inflate()
+D. replace()
+
+8) What is the purpose of the setArguments() method in a fragment?
+A. To set the layout for the fragment
+B. To pass data to the fragment
+C. To add the fragment to the back stack
+D. To remove the fragment from the back stack
+
+9) Which fragment-lifecycle callback is called when a fragment is no longer visible to the user?
+A. onStop()
+B. onDestroy()
+C. onDetach()
+D. onPause()
+
+10) How do you send data from an activity to a fragment?
+A. Set a Bundle and use the Fragment.setArguments(Bundle) method to supply the construction arguments for the fragment.
+B. Use the Fragment method getArguments() to get the arguments.
+C. Define an interface in the Fragment class, and implement the interface in the activity.
+D. Call addToBackStack() during a transaction that removes the fragment.
+
+11) Which of the following is the best sequence for adding a fragment to an activity that is already running?
+A. Declare the fragment inside the activity's layout file using a <fragment> view.
+B. Declare a location for the fragment inside the activity's layout file using the <FrameLayout> view group.
+C. Declare the location for the fragment inside the activity's layout file using the <FrameLayout> view group, get an instance of the fragment and FragmentManager, and use the add() transaction, no need to commit the transaction.
+D. Declare the location for the fragment inside the activity's layout file using the <FrameLayout> view group. Then get an instance of the fragment and FragmentManager, begin a transaction, use the add() transaction, and commit the transaction.
+
+12) Which statement gets a reference to a fragment using the fragment's layout resource?
+A. fragment = new SimpleFragment();
+B. SimpleFragment fragment = (SimpleFragment) 
+fragmentManager.findViewById(R.id.fragment_container);
+C. SimpleFragment fragment = (SimpleFragment) 
+fragmentManager.findFragmentById(R.id.fragment_container);
+D. FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
